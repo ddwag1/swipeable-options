@@ -1,6 +1,6 @@
 {
   "name": "swipeable-options",
-  "description": "An element that has swipable content and option underneith ",
+  "description": "An element that has swipeable content and option underneath ",
   "main": "swipeable-options.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0"
