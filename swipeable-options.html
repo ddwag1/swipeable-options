@@ -1,5 +1,5 @@
 <link rel="import" href="./bower_components/polymer/polymer.html">
-
+<link rel="import" href="./bower_components/iron-swipeable-container/iron-swipeable-container.html">
 <!--
 `swipeable-options`
 An element that has swipable content and option underneith 
@@ -13,8 +13,25 @@ An element that has swipable content and option underneith
       :host {
         display: block;
       }
+      
+      iron-swipeable-container {
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: default;
+      }
+      .options {
+        position:absolute;
+      }
     </style>
-    <h2>Hello [[prop1]]</h2>
+    
+    <iron-swipeable-container>
+      <h1>this content swipes</h1>
+    </iron-swipeable-container>
+    
+    <div class="options">this stays put</div>
+    
   </template>
 
   <script>
