@@ -1,0 +1,34 @@
+<link rel="import" href="./bower_components/polymer/polymer.html">
+
+<!--
+`swipeable-options`
+An element that has swipable content and option underneith 
+
+@demo demo/index.html 
+-->
+
+<dom-module id="swipeable-options">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'swipeable-options',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'swipeable-options',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
