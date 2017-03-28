@@ -12,17 +12,34 @@ An element that has swipable content and option underneith
     <style>
       :host {
         display: block;
+        position: relative;
+        font-size: 2em;
       }
-      .options {
-        position:absolute;
+      p {
+        margin: 0;
+      }
+      .swipeable-item {
+        background-color: green;
+      }
+      .stay {
+        background-color: orange;
+      }
+      
+      .swipeable-item, .stay {
+        position: absolute;
       }
     </style>
     
+    <div class="stay">this stays put</div>
+    
     <iron-swipeable-container>
-      <h1>this content swipes</h1>
+      <div class="swipeable-item">
+        <p>this content swipes</p>
+      </div>
+      
     </iron-swipeable-container>
     
-    <div class="options">this stays put</div>
+    
     
   </template>
 
@@ -37,7 +54,6 @@ An element that has swipable content and option underneith
           value: 'swipeable-options',
         },
       },
-
     });
   </script>
 </dom-module>

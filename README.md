@@ -1,6 +1,6 @@
 # \<swipeable-options\>
 
-An element that has swipeable content and options underneath.
+A Polymer element that has swipeable content with options underneath.
 
 ## Install the Polymer-CLI
 
